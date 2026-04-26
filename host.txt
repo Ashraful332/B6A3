@@ -1,0 +1,14 @@
+Host
+ep-royal-rice-amewn6vq.c-5.us-east-1.aws.neon.tech
+
+Database
+neondb
+
+Role
+neondb_owner
+
+Password
+************
+
+Pooler host
+ep-royal-rice-amewn6vq-pooler.c-5.us-east-1.aws.neon.tech 

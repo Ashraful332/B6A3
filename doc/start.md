@@ -1,4 +1,4 @@
-Node.js + PostgreSQL + Prisma ব্যবহার করা খুব সহজ। আমি তোমাকে একদম practical step-by-step দিচ্ছি।
+Node.js + PostgreSQL + Prisma 
 
 ---
 
@@ -171,11 +171,3 @@ Schema → Migrate → Client Generate → Use in Node.js
 
 ---
 
-যদি চাও, আমি তোমাকে next level দেখাতে পারি:
-
-* Relations (One-to-Many)
-* Authentication system
-* Full Express + Prisma API boilerplate
-* Neon PostgreSQL production deploy
-
-বললেই বানিয়ে দেই 👍

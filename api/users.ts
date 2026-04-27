@@ -2,7 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 const sql: any = neon(process.env.DATABASE_URL || "");
 
-export default async function handler(req: Request) {
+export default async function handler(req: any) {
   try {
     // ✅ GET all users
     if (req.method === "GET") {

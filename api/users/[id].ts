@@ -2,7 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 const sql: any = neon(process.env.DATABASE_URL || "");
 
-export default async function handler(req: Request) {
+export default async function handler(req: any) {
   const url = new URL(req.url);
   const id = Number(url.pathname.split("/").pop());
 

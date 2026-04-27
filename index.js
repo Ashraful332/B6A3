@@ -108,6 +108,9 @@ app.delete("/users/:id", async (req, res) => {
 //   console.log("🚀 Server running on http://localhost:3000");
 // });
 
+// grok fix
+module.exports = app;
+
 
 // old working code ----
 

@@ -18,6 +18,12 @@ serve({
     const method = req.method;
 
     try {
+      // ✅ start
+      if (url.pathname === "/" && method === "GET") {
+        let result = {massage:"server is start version 1.0"}
+        return json(result);
+      }
+
       // ✅ GET all users
       if (url.pathname === "/users" && method === "GET") {
         const users = await sql`SELECT * FROM "user" ORDER BY id DESC`;

@@ -1,12 +1,26 @@
 {
-  "name": "vercel-api",
+  "name": "b6a3",
   "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "@neondatabase/serverless": "^1.1.0"
+  "description": "This assignment is designed to evaluate your understanding of database table design, ERD relationships and SQL queries. You will work with a simplified Vehicle Rental System database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "devDependencies": {
-    "@types/node": "^25.6.0",
-    "typescript": "^6.0.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashraful332/B6A3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashraful332/B6A3/issues"
+  },
+  "homepage": "https://github.com/Ashraful332/B6A3#readme",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^17.4.2",
+    "prisma": "^5.22.0"
   }
 }

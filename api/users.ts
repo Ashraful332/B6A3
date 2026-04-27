@@ -12,7 +12,7 @@ export default async function handler(req: Request) {
 
     // ✅ CREATE user
     if (req.method === "POST") {
-      const body = await req.json();
+      const body:any = await req.json();
 
       if (!body.name || !body.email) {
         return Response.json(

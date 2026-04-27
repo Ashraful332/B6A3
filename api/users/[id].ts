@@ -26,7 +26,7 @@ export default async function handler(req: Request) {
 
     // ✅ UPDATE user
     if (req.method === "PUT") {
-      const body = await req.json();
+      const body:any = await req.json();
 
       const result = await sql`
         UPDATE "user"

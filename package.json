@@ -3,10 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "scripts": {
-		"dev": "bun --bun next dev", 
-		"build": "bun --bun next build"
-	},
+  "scripts": { 
+    "start": "bun run index.ts",
+    "build": "bun build index.ts --outdir dist --target bun"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

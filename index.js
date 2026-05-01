@@ -1,22 +1,20 @@
 const express = require("express");
+const cors = require('cors');
 const { PrismaClient } = require("@prisma/client");
 
 const app = express();
-const prisma = new PrismaClient({log: ["error"],});
+const prisma = new PrismaClient({ log: ["error"], });
 
 app.use(express.json());
+app.use(cors());
+require("dotenv").config();
 
 
 /* =========================
    start project
 ========================= */
-app.get("/", async (req, res) => {
-  try {
-    const send = {massage:"server is ruining version 1.2"}
-    res.json(send);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+app.get('/', (req, res) => {
+  res.send('The server is running! V.1')
 });
 
 /* =========================
@@ -104,12 +102,12 @@ app.delete("/users/:id", async (req, res) => {
 /* =========================
    SERVER START
 ========================= */
-// app.listen(3000, () => {
-//   console.log("🚀 Server running on http://localhost:3000");
-// });
+app.listen(3000, () => {
+  console.log("🚀 Server running on http://localhost:3000");
+});
 
 // grok fix
-module.exports = app;
+// module.exports = app;
 
 
 // old working code ----

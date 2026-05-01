@@ -120,7 +120,13 @@ main()
 
 ---
 
-# ✅ 9. Run server
+# ✅ 9. Add prisma generate
+
+```json
+"postinstall": "prisma generate"
+```
+
+# ✅ 10. Run server
 
 ```bash
 node index.js
